@@ -42,7 +42,7 @@ const Index = () => {
     };
 
     const draw = () => {
-      drawRect(0, 0, canvas.width, canvas.height, "#2e026d"); // Background
+      drawRect(0, 0, canvas.width, canvas.height, "#000000"); // Background
       drawNet();
       drawRect(0, player1Y, paddleWidth, paddleHeight, "#ff00ff"); // Player 1
       drawRect(canvas.width - paddleWidth, player2Y, paddleWidth, paddleHeight, "#00ffff"); // Player 2
