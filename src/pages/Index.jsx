@@ -13,7 +13,7 @@ const Index = () => {
     const paddleHeight = 100;
     const ballSize = 10;
     const playerSpeed = 6;
-    const ballSpeed = 4;
+    const ballSpeed = 2;
 
     let player1Y = canvas.height / 2 - paddleHeight / 2;
     let player2Y = canvas.height / 2 - paddleHeight / 2;
