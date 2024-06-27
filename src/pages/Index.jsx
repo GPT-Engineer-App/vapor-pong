@@ -82,11 +82,13 @@ const Index = () => {
       }
     };
 
+    let animationFrameId;
+
     const gameLoop = () => {
       if (isGameRunning) {
         draw();
         update();
-        requestAnimationFrame(gameLoop);
+        animationFrameId = requestAnimationFrame(gameLoop);
       }
     };
 
@@ -117,6 +119,7 @@ const Index = () => {
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      cancelAnimationFrame(animationFrameId);
     };
   }, [isGameRunning]);
 
